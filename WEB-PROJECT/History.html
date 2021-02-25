@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>Delivery Nuke</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="history.css" />
+    </head>
+     <body>
+        <header>
+            <nav class="navbar">  
+                <a href="LandingPage.html#products-mark">Продукты</a>
+                <a href="LandingPage.html#best">Лучшее предложение</a>
+                <a href="LandingPage.html#reviewSection">Отзывы</a>
+                <a href="">История</a>
+                <a onClick="ShowContacts()">Контакты</a>
+            </nav>
+         </header>
+         <div class="fade" id="contacts">
+            <div class="popup">
+               <h1>Контакты</h1>
+               <span>Найти нас возможно на Вяземском переулке, в парке.</span> <br>
+               <img src="mapViaz.png"><br>
+               <span>
+                   Пишите нам на почту<br>
+                   <a href = "mailto: aay3000@mail.ru">aay3000@mail.ru</a><br>
+                   Или звоните по телефону<br>
+                   <a href = "tel: +7(911)988-50-06">+7(911)988-50-06</a>
+               </span>
+            </div>
+       </div>
+         <br><br><br><br><br>
+         <section class="story flex">
+            <div>
+                <h1>Про пиво</h1>
+                <span>Пиво — древнейший напиток, известный человечеству. Пивоварение началось в далёкой древности, причём до этого люди (и их предки) употребляли забродивший сок деревьев и фруктов. Высказывается версия, что первое пиво появилось в результате контролируемой ферментации урожая, позволявшей сохранить питательные вещества зерна за счёт свежести.
+Одним из первых государств, варивших пиво, была Месопотамия. И только у нас вы можете попробовать напиток, который пили 8 тысяч лет назад</span>
+            </div>   
+            <div class="gray">
+                <h1>Цеха</h1>
+                <img id="image" src="history1.jpg" onClick="imgsrc();" height="300" width="300" />
+                <script src="scriptSwap.js"></script>
+            </div>  
+            <div class="white">
+                <h1>Про нашу компанию</h1>
+                <span>Тысячи лет пивоварение развивалось в разных уголках нашей планеты. Каждый народ внес что-то свое, и наша задача - показать все стороны этого огромного мира. Нами были объединены разные пивоварни со всего света. Начав с нескольких европейских сортов в конце прошлого века, на сегодняшний день мы уже имеем в своем ассортименте предложения не только со всех континентов, но и из различных периодов развития человечества.</span>
+            </div>          
+        </section>
+        <section class="features flex">
+            <div>
+                <img src="plain.png">
+                <h1>Скорость</h1>
+                <span>Быстро доставляем в любую точку мира и в любом количесве</span>
+            </div>
+            <div>
+                <img src="number1.png">
+                <h1>Первенство</h1>
+                <span>Лучшее предложение на рынке!</span>
+            </div>
+            <div>
+                <img src="timeicon.png">
+                <h1>Стандарты качества</h1>
+                <span>Предерживаемся лучших исторических рецептов</span>
+            </div>
+        </section>
+    </body>
+    <script src="contacts.js"></script>
+</html>

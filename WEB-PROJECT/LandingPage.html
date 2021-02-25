@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>Bear Shop</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+     <body>
+         <header>
+            <nav class="navbar">  
+                <a href="#products-mark">Продукты</a>
+                <a href="#best">Лучшее предложение</a>
+                <a href="#reviewSection">Отзывы</a>
+                <a href="History.html">История</a>
+                <a onClick="ShowContacts()">Контакты</a>
+            </nav>
+         </header>
+         <div class="fade" id="contacts">
+            <div class="popup">
+               <h1>Контакты</h1>
+               <span>Найти нас возможно на Вяземском переулке, в парке.</span> <br>
+               <img src="mapViaz.png"><br>
+               <span>
+                   Пишите нам на почту<br>
+                   <a href = "mailto: aay3000@mail.ru">aay3000@mail.ru</a><br>
+                   Или звоните по телефону<br>
+                   <a href = "tel: +7(911)988-50-06">+7(911)988-50-06</a>
+               </span>
+            </div>
+       </div>
+      
+
+         <div id="products-mark" style="height: 33px;"></div>
+         <section class="product-line">
+            <h1> Лучшее <b>пиво</b> всех стран и эпох</h1>
+            <div style="display: flex; align-items: center; justify-content: space-around; flex-wrap: wrap;">
+                <div class="product">
+                    <img src="Germania.jpg" style="height: 300px">
+                    <h3>«Немецкое пиво»</h3>
+                    <span>Незабываемая немецкая классика</span><br>
+                    <button style="width: fit-content" type="button" class="my-button">Купить сейчас</button>
+                </div>
+                <div class="product">
+                    <img src="Irland.png">
+                    <h3>«Ирландское пиво»</h3>
+                    <span>Надоели британцы? Опусташите бокал и в бой!</span><br>
+                    <button style="width: fit-content" type="button" class="my-button">Купить сейчас</button>
+                </div>
+                <div class="product">
+                    <img src="JAPAN.jpg" style="height: 300px">
+                    <h3> «Японское пиво»</h3>
+                    <span>Экзотические японские сорта - для тех, кто хочет чего-то нового</span><br>
+                    <button style="width: fit-content" type="button" class="my-button">Купить сейчас</button>
+                </div>
+
+            </div>
+         </section>
+
+         <section  class="best-choice" id="best">
+            <img src="best.jpg">
+            <div>
+                <h1>Лучшее предложение!</h1>
+                <span>Пиво сваренное по древним шумерским рецептам. Окунитесь в прошлое вместе с единственным в своем роде товаром на рынке!</span><br>
+                <button style="width: fit-content" type="button" class="my-button">Купить сейчас</button>
+            </div>
+         </section>
+         <section id="reviewSection" class="review-section">
+            <h1>Отзывы клиентов</h1>
+            <div id="reviewsContainer" style="display:flex; flex-wrap:wrap; justify-content: center;" id="review-section">
+            </div>
+         </section> 
+         <section class="feedback">
+            <div style="margin: auto; width: fit-content;">
+                <h3>Напишите нам свой отзыв</h3>
+                <label for="usernameTextField">Имя</label>
+                <input id="usernameTextField" type="text" class="input-text" placeholder="Имя"><br>
+                <label for="reviewnputTextField">Текст отзыва</label><br>
+                <textarea id="reviewnputTextField" cols="40" rows="5" placeholder="Ваш хороший отзыв"></textarea><br>
+                <button type="button" onClick="SendComment()" class="my-button">Отправить отзыв</button>
+            </div> 
+        </section>
+        <template id="reviewTemplate">
+            <div class="review">
+                <h3>Name User</h3>
+                <span>Неплохо хорошо Норм так то ага да нууу вообще можно было и поярче бахнуть</span>
+            </div>
+        </template>
+    <div class="fade show" id="ads">
+            <div class="popup">
+                <button type="button" id="rageButton" class="my-button" style="position: absolute; top:5px; right: 5px;margin: 0;">X</button>
+                <h1>ЧРЕЗМЕРНОЕ УПОТРЕБЛЕНИЕ АЛКОГОЛЬНО ПРОДУКЦИИ ВРЕДИТ ВАШЕМУ ЗДОРОВЬЮ</h1>
+            </div>
+       </div>
+     </body>
+    <script src="popup_add.js"></script>
+    <script src="comments.js"></script>
+    <script src="contacts.js"></script>
+</html>
